@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> ML Deployment using Flask</title>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head
+        
+    <body style = "background: #FFF;">
+       
+    <div class="input">
+	<h1>Car Selling Price Calculator</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{url_for('predict')}}" method="post">
+        <input type="text" name="Present_Price" placeholder="Present Price" required="required"/>
+        <input type="text" name="Kms_Driven" placeholder="No of kilometres driven" required="required" />
+        
+        
+        <select name = "Owner" required = "required">
+            <option value="" selected disabled hidden >    No of Owners that owned the car    </option>
+            <option value = '0'> New Car</option>
+            <option value = '1'> One Owner </option>
+            <option value = '2'> Two Owners </option>
+            <option value = '3'> Three Owners </option>
+        </select>
+        
+        
+
+        <input type="text" name="car_age" placeholder="Car Age since first purchase" required="required" />
+        
+        
+        <select name = "Fuel_Type" required = "required">
+            <option value="" selected disabled hidden>Fuel Type</option>
+            <option value = 'Petrol'> Petrol </option>
+            <option value = 'Diesel'> Diesel </option>
+            <option value = 'CNG'> CNG </option>
+        </select>
+        
+        
+        <select name = "Seller_Type" required = "required">
+            <option value="" selected disabled hidden>Seller Type</option>
+            <option value = 'Dealer'> Dealer </option>
+            <option value = 'individual'> Individual </option>
+        </select>
+        
+        
+        
+        <select name = "Transmission_Type" required = "required">
+            <option value="" selected disabled hidden>Transmission Type</option>
+            <option value = 'Automatic'> Automatic </option>
+            <option value = 'Manual'> Manual </option>
+        </select>
+            
+  
+        <button type="submit" class="btn btn-primary btn-block btn-large">Selling Price</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+</div>
+</body>
+</html>
