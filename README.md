@@ -32,6 +32,7 @@ Link: https://www.kaggle.com/nehalbirla/vehicle-dataset-from-cardekho
 * adjusted R<sup>2</sup>: 0.9300
 * neg mean squared error:  -2.44
 
+<<<<<<< HEAD
 ## Productionisation:
 <br />
 ### App: 
@@ -49,3 +50,4 @@ Steps:
 * Created a process file for heroku execution.
 * Pushed the entire app to the git remote repository of heroku.
 * The url of the app was created. 
+
