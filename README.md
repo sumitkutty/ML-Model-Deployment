@@ -22,7 +22,7 @@ Link: https://www.kaggle.com/nehalbirla/vehicle-dataset-from-cardekho
 * **Encoding**: The categorical features 'Fuel_Type', 'Seller_Type', 'Transmission' were one-hot encoded.
 
 ## Predictive Modelling:
-* **ML ALgorithms*: Random Forest was used for the training process.
+* **ML ALgorithms**: Random Forest was used for the training process.
 
 ## Evaluation:
 * **Metrics**: R<sup>2</sup>, adjusted  R<sup>2</sup>, negative mean squared error.
@@ -34,7 +34,6 @@ Link: https://www.kaggle.com/nehalbirla/vehicle-dataset-from-cardekho
 
 
 ## Productionisation:
-<br />
 ### App:
 <br /> 
 **Flask**:Flask is a simple to use web framework for python. It can be used to make web apps, and deploy machine learning models to production.
