@@ -35,7 +35,6 @@ Link: https://www.kaggle.com/nehalbirla/vehicle-dataset-from-cardekho
 
 ## Productionisation:
 ### App:
-<br /> 
 **Flask**:Flask is a simple to use web framework for python. It can be used to make web apps, and deploy machine learning models to production.
 Steps:
 * Created an app to to load a HTML UI when a user visits a url.
